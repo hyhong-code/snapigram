@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const PostCard = () => {
+const CommentCard = () => {
   return (
     <div class="card border-primary-light mb-4">
       <div className="post-header card-header py-1 d-flex align-items-center">
@@ -25,22 +24,21 @@ const PostCard = () => {
       </div>
       <div class="card-body bg-light">
         <p class="card-text mb-0">
-          <strong>Jane Doe:</strong> Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Sapiente, molestias.
+          <a href="" className="name-link mr-1">
+            <strong>Jane Doe:</strong>
+          </a>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          molestias.
         </p>
         <hr className="text-divide my-2" />
         <small className="text-xs d-block">Friday, June 26, 2020</small>
         <div className="mt-2">
-          <a href="" className="btn btn-outline-primary-dark mr-2">
-            Like <span class="badge bg-accent">9</span>
-          </a>
-          <Link to="/comment/:123" className="btn btn-outline-dark">
-            Comment <span class="badge bg-primary-dark">9</span>
-          </Link>
+          <span class="badge bg-accent mr-2">9 Likes</span>
+          <span class="badge bg-primary-dark">9 Comments</span>
         </div>
       </div>
     </div>
   );
 };
 
-export default PostCard;
+export default CommentCard;

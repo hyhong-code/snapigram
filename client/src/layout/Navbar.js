@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          Navbar
+          SnapiGram
         </a>
         <button
           className="navbar-toggler"

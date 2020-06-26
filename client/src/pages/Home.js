@@ -15,6 +15,11 @@ const Home = () => {
             <div className="mt-4 px-3">
               <PostCard />
               <PostCard />
+              <PostCard />
+              <PostCard />
+              <PostCard />
+              <PostCard />
+              <PostCard />
             </div>
           </div>
         </div>
