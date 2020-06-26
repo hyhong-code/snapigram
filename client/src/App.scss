@@ -8,7 +8,7 @@ $color-primary-dark: #c2185b;
 $color-primary-light: #f8bbd0;
 $color-secondary: #757575;
 $color-dark: #212121;
-$color-light: #ffffff;
+$color-light: #fde9f0;
 $color-accent: #009688;
 $color-divide: #bdbdbd;
 
@@ -16,11 +16,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-// HOME PAGE
-.section-top {
-  margin-top: 5rem;
+a {
+  text-decoration: none;
 }
 
+section {
+  padding-top: 5rem;
+  height: 100vh;
+  overflow: scroll;
+  background-color: $color-dark;
+}
+
+// HOME PAGE
 .avatar-box {
   width: 50px;
   align-items: center;
@@ -32,8 +39,56 @@ body {
   border-radius: 100px;
   overflow: hidden;
   border: 2px solid $color-primary;
+
+  &-sm {
+    width: 35px;
+  }
 }
 
 .text-xs {
   font-size: 0.7rem;
+}
+
+.post-header {
+  margin-bottom: -7px;
+  background-color: $color-primary-light;
+  color: $color-secondary;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.avatar-link {
+  border: 1px solid transparent;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+  transition: border 0.3s;
+
+  &:hover {
+    border: 1px solid rgba($color-light, 0.7);
+  }
+}
+
+.home-container {
+  position: relative;
+  height: 100%;
+}
+
+.btn-round {
+  z-index: 1;
+  position: fixed;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: $color-primary-dark;
+  border-radius: 100px;
+  right: 20%;
+  bottom: 20%;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .btn-round {
+    right: 10%;
+    bottom: 5%;
+  }
 }

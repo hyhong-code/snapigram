@@ -2,7 +2,7 @@ import React from "react";
 
 const AvatarsPanel = () => {
   return (
-    <div className="card">
+    <div className="card border-primary-light bg-light">
       <div className="card-body px-3 px-md-4 py-1 text-nowrap overflow-auto d-flex">
         <div className="avatar-box d-flex flex-column mr-2">
           <div className="avatar">

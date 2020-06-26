@@ -1,16 +1,25 @@
 import React from "react";
 import AvatarsPanel from "../components/AvatarsPanel";
+import PostCard from "../components/PostCard";
 
 const Home = () => {
   return (
-    <div className="container section-top">
-      <div className="row">
-        <div className="col-md-8">
-          <AvatarsPanel />
+    <section className="">
+      <div className="container home-container">
+        <button className="btn btn-round text-light">
+          <i className="fas fa-plus"></i>
+        </button>
+        <div className="row">
+          <div className="col-md-8 offset-md-2">
+            <AvatarsPanel />
+            <div className="mt-4 px-3">
+              <PostCard />
+              <PostCard />
+            </div>
+          </div>
         </div>
-        <div className="col-md-4"></div>
       </div>
-    </div>
+    </section>
   );
 };
 
