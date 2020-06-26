@@ -1,0 +1,14 @@
+/* CUSTOMIZATIONS */
+$theme-colors: (
+  "primary": #e91e63,
+  "primary-dark": #c2185b,
+  "primary-light": #f8bbd0,
+  "secondary": #757575,
+  "dark": #212121,
+  "light": #ffffff,
+  "accent": #009688,
+  "divide": #bdbdbd,
+);
+
+/* IMPORT BOOTSTRAP */
+@import "~bootstrap/scss/bootstrap";
