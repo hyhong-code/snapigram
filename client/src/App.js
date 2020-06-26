@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navbar from "./layout/Navbar";
+import Home from "./pages/Home";
 
 function App() {
-  return <div className="App">Hello</div>;
+  return (
+    <Fragment>
+      <Navbar />
+      <Home />
+    </Fragment>
+  );
 }
 
 export default App;
